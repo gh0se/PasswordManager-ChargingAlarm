@@ -1,0 +1,10 @@
+<!-- file: res/layout/custom_dialog_title.xml -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customDialogTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textColor="@color/title_orange"
+    android:padding="16dp"
+    android:background="@color/darkBackground"
+    style="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle" />

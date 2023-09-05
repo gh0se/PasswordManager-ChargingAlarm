@@ -1,0 +1,72 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">#ff9000</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="colorPrimaryDark">#2a2b2d</item>
+        <item name="colorAccent">#ff9000</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:alertDialogTheme">@style/MyAlertDialogTheme</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/MyDialogButtonStyle</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/MyDialogButtonStyle</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/MyDialogButtonStyle</item>
+    </style>
+
+    <style name="MyDialogTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/title_orange</item>
+    </style>
+
+    <style name="MyDialogMessage" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="MyDialogButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+
+    <style name="MyAlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+
+        <item name="android:windowBackground">@color/darkBackground</item>
+
+
+        <item name="android:titleTextStyle">@style/MyDialogTitle</item>
+        <item name="android:textAppearance">@style/MyDialogMessage</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/MyDialogButtonStyle</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/MyDialogButtonStyle</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/MyDialogButtonStyle</item>
+
+        <item name="android:textColorHint">#FFFFFF</item>
+
+    </style>
+
+
+    <color name="darkBackground">#303030</color>
+
+    <style name="MyButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+
+    <color name="title_orange">#ff9000</color>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textAppearance">@style/MyTextAppearance</item>
+    </style>
+
+    <style name="MyTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#ff9000</item>
+    </style>
+
+    <style name="Theme.AppCompat.NoActionBar.Translucent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+</resources>
