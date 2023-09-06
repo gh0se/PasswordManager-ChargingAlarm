@@ -30,7 +30,7 @@ public class TransparentActivity extends AppCompatActivity {
         rootView.setClickable(true);
         rootView.setOnClickListener(v -> {
             if (!MainActivity.isPromptActive) {
-                MainActivity mainActivity = (MainActivity) MainActivity.instance;
+                MainActivity mainActivity = MainActivity.instance;
                 if (mainActivity != null) {
                     mainActivity.displayBiometricPrompt();
                 }

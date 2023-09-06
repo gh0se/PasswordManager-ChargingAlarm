@@ -33,9 +33,9 @@ import java.util.List;
 public class WebsiteAdapter extends RecyclerView.Adapter<WebsiteAdapter.WebsiteViewHolder> {
 
     public static List<Website> websites; // Your data source
-    private OnItemClickListener listener;
-    private Context mContext;
-    private RecyclerView mRecyclerView;
+    private final OnItemClickListener listener;
+    private final Context mContext;
+    private final RecyclerView mRecyclerView;
 
     public List<Website> allWebsites;  // This will store all websites
     public List<Website> filteredWebsites; // This will store filtered websites
@@ -194,7 +194,7 @@ public class WebsiteAdapter extends RecyclerView.Adapter<WebsiteAdapter.WebsiteV
     }
 
     public void updateData(List<Website> newWebsites) {
-        this.websites = newWebsites;
+        websites = newWebsites;
         notifyDataSetChanged();
     }
 
